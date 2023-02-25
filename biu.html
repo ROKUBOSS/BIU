@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIU</title>
+<link rel="shortcut icon" href="biu.png" type="image/x-icon">
+<style>
+* {
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+}
+body{
+    background-image: linear-gradient(gold,red,darkblue);
+}
+.menu {
+float: left;
+width: 20%;
+
+}
+
+.menu a {
+padding: 8px;
+margin-top: 7px;
+display: block;
+width: 100%;
+color: darkblue;
+}
+
+.main {
+float: left;
+width: 60%;
+padding: 5px 5px;
+color: darkblue;
+
+
+}
+.main,.Qst{
+    font-size: 20px;
+}
+
+.right {
+float: left;
+width: 20%;
+padding: 15px;
+margin-top: 7px;
+text-align: center;
+}
+.collapsible {
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 60%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+border: 3px solid gold;
+margin: 1px;
+}
+
+.active, .collapsible:hover {
+background-color: #555;
+}
+
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+padding: 5px;
+color: bisque;
+}
+
+@media only screen and (max-width: 620px) {
+/* For mobile phones: */
+.menu, .main, .right {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div style="padding:15px;text-align:center;">
+<h1></h1>
+</div>
+
+<div style="overflow:auto">
+<div class="menu">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+<a href="#">Link 4</a>
+<a href="#">Link 5</a>
+</div>
+
+<div class="main">
+<h2>Marks-Distribution</h2> <br><br>
+<pre>
+<input type="radio" name="" id="">Mid-term Exam - 30
+
+<input type="radio" name="" id="">Final    Exam - 40
+
+<input type="radio" name="" id="">Viva     Exam - 10
+
+<input type="radio" name="" id="">Assignment    - 10
+
+<input type="radio" name="" id="">Attendence    - 10
+</pre>
+
+</div>
+<div class="Qst">
+
+<button type="button" class="collapsible"><b>Details</b> (Subjects Code / Teacher's Name / Room)</button>
+<div class="content">
+<p>
+<button>Batch-49th Evening</button>  <br><br>
+GED-107 <br>
+Functional-English <br>
+Harun - Or - Rashid <br>
+Room - 3012  <br>
+Time -  <br>
+(Friday) <br><br>
+
+IS-233 <br>
+Islamic Culture and Civilization <br>
+Muhammad Jufrullah <br>
+Room - 3012  <br>
+Time - 4:30 - 6:00 PM   <br>
+(Friday) <br><br><br>
+<button>Batch-49th Regular</button>  <br><br>
+IS-124 <br>
+Principles Of Tafseer <br>
+Md.Motiul Islam <br><br><br>
+Room - 3012  <br>
+Time - 3:00 - 4:30 PM  <br>
+(Tuesday) <br><br><hr>
+Room - 3012  <br>
+Time - 1:30 - 3:00 PM  <br>
+(Wednessday) <br>
+
+
+
+</p>
+</div>
+<button type="button" class="collapsible">Exam Instruments</button>
+<div class="content">
+<p>
+<pre>
+<input type="radio" name="" id="">Student ID Card   
+
+<input type="radio" name="" id="">Admit Card   
+
+<input type="radio" name="" id="">Watch   
+
+<input type="radio" name="" id="">Pen   
+
+<input type="radio" name="" id="">Ruler
+
+<input type="radio" name="" id="">Cap   
+
+<input type="radio" name="" id="">Keys  
+
+<input type="radio" name="" id="">Money   
+
+<input type="radio" name="" id="">Mobile Net & Charge 
+
+
+
+<input type="radio" name="" id="">Room No 
+
+<input type="radio" name="" id="">Teacher's Name  
+
+<input type="radio" name="" id="">Retake Queries
+</pre>
+</p>
+</div>
+<button type="button" class="collapsible">I am </button>
+<div class="content">
+<h3>Student Of .....👇🏿</h3> <br><br><br>
+<pre>
+<input type="radio" name="" id="">BIU (Bangladesh Islami University)
+
+<input type="radio" name="" id="">BKIICT
+
+<input type="radio" name="" id="">EduHive ICT (HSC)
+
+<input type="radio" name="" id="">Ismail Sir ICT (HSC)
+
+<input type="radio" name="" id="">IELTS  <br><br><br>
+</pre>
+<h3>Teacher Of .....👇🏿</h3> <br><br><br>
+<pre>
+<input type="radio" name="" id="">CHL (2 Batches)
+
+<input type="radio" name="" id="">Samet (1 Batch)
+
+<input type="radio" name="" id="">Agargaon (1 Batch)
+
+<!-- <input type="radio" name="" id=""> -->
+
+<!-- <input type="radio" name="" id=""> -->
+</pre>
+</div>
+
+</div>
+
+<div class="right">
+<h2></h2>
+<p></p>
+</div>
+</div>
+
+<div></div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+</script>
+</body>
+</html>
+
